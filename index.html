@@ -1,20 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Mad Genius - GitHub</title>
+    <title>Mad Genius Code</title>
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7699334/7338992/css/fonts.css" />
 </head>
+
 <style>
     body {
-        background: #000;
-        font-family: sans-serif;
-        color: #fff;
+        background: #3A3A3C;
+        font-family: "Gotham A", "Gotham B", "Montserrat", sans-serif;
+        line-height: 1.45;
         text-align: center;
+        color: #fff;
+    }
+
+    .wrapper {
+        margin: 0 auto;
+        padding: 1rem;
+        max-width: 400px;
+    }
+
+    .logo {
+        margin: 3rem auto;
+        width: 120px;
+        font-weight: normal;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .logo a {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .logo img {
+        position: relative;
+        max-width: 100%;
+        height: auto;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .logo a:hover img,
+    .logo a:focus img {
+        transform: translateY(-0.25rem);
+    }
+
+    ul {
+        margin-top: 2rem;
+        padding-left: 0;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    ul a {
+        display: block;
+        padding: 1rem 0.5rem;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+        text-decoration: none;
+        font-size: 1.25rem;
+        color: #7ACCC6;
+        transition: border-color 0.3s ease, background-color 0.3s ease;
+    }
+
+    ul a:hover,
+    ul a:focus {
+        border-color: #7ACCC6;
+        /*background-color: #535256;*/
+    }
+
+    .sr-only, .assistive-text {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+    }
+    .sr-only-focusable:active,
+    .sr-only-focusable:focus {
+        position: static;
+        width: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        clip: auto;
+    }
+
+    p {
+        text-align: left;
     }
 </style>
+
 <body>
-    <h1>Mad Genius</h1>
-    <p>Mad Genius is a Creative Fusion of design, print, digital, social media, TV and video production, animation, media strategy, and more all under one roof.</p>
+    <div class="wrapper">
+        <h1 class="logo">
+            <a href="https://madg.com"><img src="logo.svg" alt="Mad Genius"></a>
+            <span>Code</span>
+        </h1>
+        
+        <p>Mad Genius is a Creative Fusion of design, print, digital, social media, TV and video production, animation, media strategy, and more all under one roof.</p>
+
+        <ul>
+            <li><a href="http://mad-genius.github.io/mg-space/">MG Space</a></li>
+            <li><a href="https://github.com/mad-genius/mg-breakpoint">MG Breakpoint</a></li>
+            <li><a href="https://github.com/mad-genius/mg-blogstore">MG Blogstore</a></li>
+        </ul>
+    </div>
+
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
